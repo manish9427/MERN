@@ -50,3 +50,31 @@ for this first import this {const fs =require('fs')}
 and after that use {console.log(fs.readFileSync(path,encoding='utf8')})}
 
 =>user define function
+write the function in different file and after that export it {module.exports=function}
+
+and after that use it by importing it
+const function=require("./loction")
+
+=>faker
+use this website to get random module
+
+steps
+1-npm init -y
+2-npm i @faker-js/faker
+const {faker}=require(@faker-js/faker)
+https://www.npmjs.com/package/@faker-js/faker
+create the function and put the data into the return function and it show you the data of that person
+
+=> axios
+https://jsonplaceholder.typicode.com/todos/1
+
+const axios = require("axios");
+async function sampleGetRequest() {
+const response = await axios.get(
+"https://jsonplaceholder.typicode.com/todos"
+);
+
+console.log(response.data);
+}
+
+sampleGetRequest();
