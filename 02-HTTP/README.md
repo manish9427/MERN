@@ -91,3 +91,20 @@ Request Body:{
 <!-- server.js -->
 
 -import HTTP from HTTP
+and after that take the variable and in that take function creatServer((req,res)=>{}) and after that server.listen(PORTS) and write some commnet into the console.log()
+
+<!-- nodemon -->
+
+npm i -g nodemon
+
+==>res.write
+this function will show what ever we write inside in that fuction on to the screen
+
+# Note allbase put {res.end();} at the end
+
+## always make sure to import the package
+
+# we can also change url
+
+req.url = 'http://example.com
+req.method = GET

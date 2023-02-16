@@ -41,11 +41,11 @@ Request -> Backend -> Response
 for this first import this {const crypto =require('crypto')}
 and after that use {console.log(crypto.randomInt(min,max))}
 
-->os
+->os(operating system)
 for this first import this {const os =require('os')}
 and after that use {console.log(os.cpus())}
 
-->fs
+->fs(file system)
 for this first import this {const fs =require('fs')}
 and after that use {console.log(fs.readFileSync(path,encoding='utf8')})}
 
