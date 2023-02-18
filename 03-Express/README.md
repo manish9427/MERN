@@ -32,3 +32,17 @@ CRUD Application for managing Employee Data
 4. DELETE /employee/:id -> Will delete the employee with the given id
 
 JSON file.
+
+#### ----------------------- What I have Learned ------------------
+
+# serve
+
+- server.listen
+- server.get
+- server.post
+- server.patch
+- server.delete
+
+# res
+
+- res.send

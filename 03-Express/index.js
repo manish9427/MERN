@@ -1,27 +1,28 @@
 const express = require("express");
 const server = express();
+const fs = require("fs");
 
 // Request Method--->path, Handler
-server.get("/", (req, res) => {
-  res.send("Hello World");
-});
+// server.get("/", (req, res) => {
+//   res.send("Hello World");
+// });
 
-server.get("/welcome.html", (req, res) => {
-  res.send("<h1>welcome World</h1>");
-});
+// server.get("/welcome.html", (req, res) => {
+//   res.send("<h1>welcome World</h1>");
+// });
 
-server.post("/hello", (req, res) => {
-  res.send("Hello");
-});
+// server.post("/hello", (req, res) => {
+//   res.send("Hello");
+// });
 
-server.post("/hello/:user", (req, res) => {
-  res.send("Hello user");
-});
+// server.post("/hello/:user", (req, res) => {
+//   res.send("Hello user");
+// });
 
-server.post("/welcome/:user", (req, res) => {
-  const user = req.params.user;
-  res.send("Welcome  " + user);
-});
+// server.post("/welcome/:user", (req, res) => {
+//   const user = req.params.user;
+//   res.send("Welcome  " + user);
+// });
 
 // try {
 //   server.get("/*", (req, res) => {
@@ -31,11 +32,13 @@ server.post("/welcome/:user", (req, res) => {
 //   console.log(e.message);
 //   res.send("Something Went Wrong");
 // }
-
-server.get("/fileName", (req, res) => {
+server.get("/:fileName", (req, res) => {
   const fileName = req.params.fileName;
   try {
-    res.send;
+    const content = fs.readFileSync(`./static/${fileName}`, {
+      encoding: "utf8",
+    });
+    res.send(content);
   } catch (e) {
     console.log(e.message);
     res.send("Something Went Wrong");
