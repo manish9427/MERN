@@ -46,3 +46,9 @@ JSON file.
 # res
 
 - res.send
+
+* res.status
+
+# Params
+
+- const variableName = req.params.variableName
