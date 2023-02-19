@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Arun Kumar",
+    "designation": "Staff Engineer",
+    "gender": "male"
+  },
+  {
+    "id": 2,
+    "name": "Manish Verma",
+    "designation": "Web Developer",
+    "gender": "male"
+  },
+  {
+    "id": 3,
+    "name": "Nikita Verma",
+    "designation": "Data Analyst",
+    "gender": "Female"
+  },
+  {
+    "id": 4,
+    "name": "Neeraj Verma",
+    "designation": "Software Engineer",
+    "gender": "male"
+  }
+]

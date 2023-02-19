@@ -52,3 +52,13 @@ JSON file.
 # Params
 
 - const variableName = req.params.variableName
+
+# Query
+
+- const query = rq.query
+- console.log('Query',query)
+
+# Body
+
+- const body = req.body
+- console.log('Body',body)
