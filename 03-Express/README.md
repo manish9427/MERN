@@ -62,3 +62,25 @@ JSON file.
 
 - const body = req.body
 - console.log('Body',body)
+
+# express
+
+- import the express{const express=require('express')}
+- rap with the express{const fileName=express()}
+
+# get
+
+fileName.get()
+-async and await
+
+# post
+
+fileName.post()
+
+# patch
+
+fileName.patch()
+
+# delete
+
+fileName.delete()

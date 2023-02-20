@@ -7,11 +7,31 @@ async function getAllEmployees() {
   return employees;
 }
 
-function addEmployee(data) {}
+async function updateEmployeesFile(employees) {
+  employees = JSON.stringify(employees, null, 2);
+  await fs.writeFile("./employees.json", employees);
+}
 
-function updateEmployee(id, data) {}
+async function addEmployee(data) {
+  const employees = await getAllEmployees();
+  let id = 1;
+  for (const employee of employees) {
+    if (employee.id >= id) {
+      id = employee.id + 1;
+    }
+  }
+  data.id = id;
+  employees.push(data);
+  await updateEmployeesFile(employees);
+  return data;
+}
 
-function removeEmployee(id) {}
+async function updateEmployee(id, data) {
+  const employees = await getAllEmployees();
+  let index = -1;
+}
+
+async function removeEmployee(id) {}
 
 module.exports = {
   getAllEmployees,
