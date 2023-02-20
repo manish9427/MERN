@@ -30,9 +30,21 @@
     "id": 5
   },
   {
-    "name": "Manoj Verma",
+    "name": "radhika Verma",
     "dasignation": "Software Engineer",
-    "gender": "Male",
-    "id": 6
+    "gender": "female",
+    "id": 7
+  },
+  {
+    "name": "rahul Verma",
+    "dasignation": "Electrical Engineer",
+    "gender": "male",
+    "id": 8
+  },
+  {
+    "name": "Payal Verma",
+    "dasignation": "Electrical Engineer",
+    "gender": "female",
+    "id": 9
   }
 ]
