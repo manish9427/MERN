@@ -1,5 +1,25 @@
 {
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "- [Introduction to Nodejs](./01-Intro/README.md)\r - [HTTP Server & Introduction to Express](./02-HTTP%20Basics/README.md)\r - [Express Intro](./03-Express/README.md)\r - [Express Middlewares, Request Handlers and Validations](./04-Middlewares_ecosystem/README.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manish9427/MERN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manish9427/MERN/issues"
+  },
+  "homepage": "https://github.com/manish9427/MERN#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
   }
 }
